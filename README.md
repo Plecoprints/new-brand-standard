@@ -20,6 +20,10 @@ npm run dev     # http://localhost:3000
 npm run build   # fetches CMS content, then builds — out/ is the deployable site
 ```
 
+## Design
+
+The `hallmark` anti-AI-slop design skill is installed (`.agents/skills/hallmark`, symlinked for Claude Code at `.claude/skills/hallmark`). See `CLAUDE.md` → Design — it's the default for any new page or redesign, not an opt-in.
+
 ## Notes on this scaffold
 
 - **Placeholder post**: `scripts/fetch-cms-content.mjs` seeds one placeholder post (`/blog/hello-world`) when the CMS returns zero real posts — a dynamic route with `generateStaticParams()` resolving to zero paths fails the entire `output: export` build, and a fresh repo starts with an empty CMS. The seed proves the FAQ schema / TOC / breadcrumbs pipeline renders correctly before any real content exists. Delete the `PLACEHOLDER_POST` constant and its matching `content/post-faqs.ts` entry once the first real post is published.

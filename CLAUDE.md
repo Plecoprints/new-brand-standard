@@ -100,7 +100,9 @@ Site-wide:
 
 # Design
 
-Premium, modern, elegant. Subtle animations, proper spacing, clear visual hierarchy. No emoji icons. No generic gradients. One accent colour (pick one and stick to it).
+**Use the `hallmark` skill for any new page, component, or redesign** — it's installed at `.agents/skills/hallmark` (symlinked for Claude Code at `.claude/skills/hallmark`). It's the anti-AI-slop design skill: it enforces structural variety (no default hero → 3-feature → CTA → footer rhythm on every page), picks a real theme/type-pairing instead of the generic defaults every LLM falls back to, and refuses template-marketplace lookalikes. Invoke it by default for any build/design request; use `hallmark audit <target>` to score existing pages against the anti-pattern list without editing, `hallmark redesign <target>` to restructure inside existing implementation boundaries, and `hallmark study <url|screenshot>` to extract a reference's design DNA.
+
+Within whatever Hallmark produces: premium, modern, elegant. Subtle animations, proper spacing, clear visual hierarchy. No emoji icons. No generic gradients. One accent colour (pick one and stick to it).
 
 ---
 
